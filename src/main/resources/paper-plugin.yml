@@ -1,0 +1,4 @@
+name: MC-Skyforge
+version: '1.0-SNAPSHOT'
+main: skyforge.draconincdomain.com.mC
+api-version: '1.21'
