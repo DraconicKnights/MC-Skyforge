@@ -1,4 +1,9 @@
-name: MC-Skyforge
+name: MC-SkyForge
 version: '1.0-SNAPSHOT'
-main: skyforge.draconincdomain.com.mC
+main: com.draconincdomain.skyforge.SkyForge
 api-version: '1.21'
+commands:
+  editor:
+    description: "example for this"
+    usage: "/editor"
+    permission: skyforge.admin

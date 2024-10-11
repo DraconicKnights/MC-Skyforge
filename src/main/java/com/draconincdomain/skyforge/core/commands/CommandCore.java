@@ -1,5 +1,6 @@
-package skyforge.draconincdomain.com.Core.Commands;
+package com.draconincdomain.skyforge.core.commands;
 
+import com.draconincdomain.skyforge.SkyForge;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,7 +9,6 @@ import org.bukkit.command.TabExecutor;
 import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import skyforge.draconincdomain.com.SkyForge;
 
 import java.util.HashMap;
 import java.util.List;

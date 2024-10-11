@@ -1,6 +1,6 @@
-package skyforge.draconincdomain.com.Core.Arrays;
+package com.draconincdomain.skyforge.core.Arrays;
 
-import skyforge.draconincdomain.com.Core.SkyForge.SkyForgeMap;
+import com.draconincdomain.skyforge.core.SkyForgeData.SkyForgeMap;
 
 import java.util.List;
 import java.util.Map;

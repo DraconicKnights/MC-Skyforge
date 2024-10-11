@@ -1,13 +1,13 @@
-package skyforge.draconincdomain.com.Core.Commands;
+package com.draconincdomain.skyforge.core.commands;
 
+import com.draconincdomain.skyforge.core.Arrays.ArrayController;
 import org.bukkit.ChatColor;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
-import skyforge.draconincdomain.com.Core.Annotations.Commands;
-import skyforge.draconincdomain.com.Core.Arrays.ArrayController;
+import com.draconincdomain.skyforge.core.Annotations.Commands;
 
 import java.util.List;
 

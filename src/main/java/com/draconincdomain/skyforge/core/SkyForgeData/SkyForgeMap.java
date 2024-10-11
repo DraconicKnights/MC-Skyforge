@@ -1,4 +1,4 @@
-package skyforge.draconincdomain.com.Core.SkyForge;
+package com.draconincdomain.skyforge.core.SkyForgeData;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -19,6 +19,8 @@ public class SkyForgeMap {
     private Location lobbySpawnLocation;
     private List<Location> playerSpawnLocations;
     private List<Location> chestSpawnLocations;
+    private List<Location> skyForgePoints;
+    private List<Location> skyForgeCore;
     private Location domeCentre;
     private int domeRadius;
 
@@ -26,12 +28,14 @@ public class SkyForgeMap {
             .setPrettyPrinting()
             .create();
 
-    public SkyForgeMap(String mapName, String worldName, Location lobbySpawnLocation, List<Location> playerSpawnLocations, List<Location> chestSpawnLocations, Location domeCentre, int domeRadius) {
+    public SkyForgeMap(String mapName, String worldName, Location lobbySpawnLocation, List<Location> playerSpawnLocations, List<Location> chestSpawnLocations, List<Location> skyForgePoints, List<Location> skyForgeCore, Location domeCentre, int domeRadius) {
         this.mapName = mapName;
         this.worldName = worldName;
         this.lobbySpawnLocation = lobbySpawnLocation;
         this.playerSpawnLocations = playerSpawnLocations;
         this.chestSpawnLocations = chestSpawnLocations;
+        this.skyForgePoints = skyForgePoints;
+        this.skyForgeCore = skyForgeCore;
         this.domeCentre = domeCentre;
         this.domeRadius = domeRadius;
     }
@@ -94,6 +98,14 @@ public class SkyForgeMap {
 
     public List<Location> getChestSpawnLocations() {
         return chestSpawnLocations;
+    }
+
+    public List<Location> getSkyForgePoints() {
+        return skyForgePoints;
+    }
+
+    public List<Location> getSkyForgeCore() {
+        return skyForgeCore;
     }
 
     public Location getDomeCentre() {
