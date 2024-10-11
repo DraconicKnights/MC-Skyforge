@@ -1,7 +1,5 @@
 package com.draconincdomain.skyforge;
 
-import com.draconincdomain.skyforge.core.commands.CommandCore;
-import com.draconincdomain.skyforge.core.commands.EditorMode;
 import org.bukkit.Bukkit;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -25,11 +23,10 @@ public final class SkyForge extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         Bukkit.getLogger().info("Plugin has been enabled");
+
         setInstance();
         loadMaps();
-        testRegisterCommand(new EditorMode());
-/*        registerPluginCommands();
-        registerEvents();*/
+        registerPluginCore();
     }
 
     @Override
@@ -37,9 +34,9 @@ public final class SkyForge extends JavaPlugin {
         // Plugin shutdown logic
     }
 
-    private void testRegisterCommand(CommandCore core) {
-        this.getCommand(core.getClass().getSimpleName()).setExecutor(core);
-        System.out.println("Command registered successfully: " + core.getClass().getSimpleName());
+    private void registerPluginCore() {
+        registerPluginCommands();
+        registerEvents();
     }
 
     private void registerPluginCommands() {

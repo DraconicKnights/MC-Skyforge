@@ -15,7 +15,7 @@ import java.util.List;
 public class EditorMode extends CommandCore {
 
     public EditorMode() {
-        super("editor", "skyforge.admin", 5);
+        super("editormode", "skyforge.admin", 5);
     }
 
     @Override

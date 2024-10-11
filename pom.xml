@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.draconincdomain.skyforge</groupId>
-    <artifactId>MC-Skyforge</artifactId>
+    <artifactId>MC-SkyForge</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
